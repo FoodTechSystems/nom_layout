@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html lang="ru" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Войти</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+    <link href="./css/normalize.css" rel="stylesheet" />
+    <link href="./css/header.css" rel="stylesheet" />
+    <link href="./css/login.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/common.css">
+</head>
+<body>
+    <div class="">
+        <div class="registartion_form_block">
+            <div class="registartion_form_wrapper">
+                <img class="registartion_form_logo" src="images/logo.svg" />
+                <form>
+                    <h2>Начало работы</h2>
+                    <input id="phone" type="text" placeholder="Введите свой номер телефона (обязательно)" />
+                    <input type="submit" value="Получить код" />
+                    <p>Нажимая кнопку “ПОЛУЧИТЬ КОД”, вы принимаете условия <a href="link">Пользовательского соглашения</a></p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <script src="js/mask.js"></script>
+    <script>
+        $(function () {
+            $("#phone").mask("+375(99) 999-99-99");
+        });
+    </script>
+
+</body>
+</html>
