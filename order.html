@@ -1,0 +1,161 @@
+﻿<!DOCTYPE html>
+<html lang="ru" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Рестораны</title>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+    <link href="./css/normalize.css" rel="stylesheet" />
+    <link href="./css/header.css" rel="stylesheet" />
+    <link href="./css/order.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/common.css">
+</head>
+<body>
+
+<div class="header-component header-block">
+    <header>
+        <div class="header_container">
+            <div class="header_logo_container">
+                <img src="images/logo.svg" alt="">
+            </div>
+            <!-- <div class="header_categories_btn_countainer">
+                <a>Категории</a>
+            </div> -->
+            <!-- <div class="header_order_info">
+                <div class="header_order_info_time">Сейчас</div>
+                <div class="header_order_info_location">Минск, ул. Романовская Слобода 100</div>
+            </div> -->
+            
+            <div class="header_user_info">
+                <div class="header_user_info_sign_in_block">
+                    <a class="header_user_info_btn_sign_in" href="">войти</a>
+                </div>
+                <!-- <div class="header_user_info_user_basket">
+                    <a class="user_basket" href=""></a>
+                </div> -->
+            </div>
+
+            <div class="mobile_open_menu_block"></div>
+        </div>
+    </header>
+    <div class="mobile_bar_menu_block">
+        <div class="mobile_bar_menu_background"></div>
+        <div class="mobile_bar_menu hidden">
+            <div class="mobile_bar_menu_wrapper">
+                <div class="mobile_bar_menu_close_btn"></div>
+                <div class="mobile_header_logo_container">
+                    <img src="images/logo.png" alt="">
+                </div>
+                <div class="mobile_main_links">
+                    <a class="sign_in" href="">Войти</a>
+                    <a class="restaurants" href="">Рестораны</a>
+                    <a class="reach" href="">Связаться</a>
+                </div>
+
+                <div class="mobile_navigation_links">
+                    <a class="" href="">О проекте</a>
+                    <a class="" href="">Вопросы и ответы</a>
+                    <a class="" href="">Пользовательское соглашение</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="no-margin-wrapper wrapper">
+    <div class="order checked">
+        <div class="desctop_hide goback">
+            <a href="">назад</a>
+        </div>
+        <h1>Оформление заказа</h1>
+
+        <div class="checkout_content">
+            <div class="checkout_content_block">
+                <div class="checkout_content_block_header">
+                    1. Войдите или создайте аккаунт
+                </div>
+                <div class="checkout_content_block_content">
+                    <div>
+                        <span>Ещё не пользовались сервисом? Регистрация займёт всего минуту. Если вы уже зарегистрированы, войдите в аккаунт.</span>
+                    </div>
+
+                    <div class="checkout_content_block_content_btn">
+                        <a href="" class="btn">вход</a>
+                        <a href="" class="btn">создать аккаунт</a>
+                    </div>
+                </div>
+            </div>
+            <div class="checkout_content_block blocked">
+                <div class="checkout_content_block_header">
+                    2. Время доставки
+                </div>
+            </div>
+            <div class="checkout_content_block blocked">
+                <div class="checkout_content_block_header">
+                    3. Адрес доставки
+                </div>
+            </div>
+            <div class="checkout_content_block blocked">
+                <div class="checkout_content_block_header">
+                    4. Оплата
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="checkout_order_info_block">
+            <div class="checkout_order_info">
+                
+                <div class="checkout_order_info_header">
+                    <span>Ваш заказ из ресторана</span>
+                    <h2>McDonalds (пр. Держинского 96)</h2>
+                </div>
+                <div class="checkout_order_info_button">
+                    <a>оплатить</a>
+                </div>
+                <div class="checkout_order_info_shopping_cart">
+                    <div class="item">
+                        <div class="checkout_order_info_shopping_cart_count">
+                            
+                        </div>
+                        <div class="checkout_order_info_shopping_cart_description">
+                            <h3>Пара за 3,50</h3>
+                            <span>Чизбургер</span>
+                            <span>Картошка фри</span>
+                            <a href="">Удалить</a>
+                        </div>
+                        <div class="checkout_order_info_shopping_cart_price">
+                            <span>3р. 50 коп.</span>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="checkout_order_info_shopping_cart_count">
+                            
+                        </div>
+                        <div class="checkout_order_info_shopping_cart_description">
+                            <h3>Пара за 3,50</h3>
+                            <span>Чизбургер</span>
+                            <span>Картошка фри</span>
+                            <a href="">Удалить</a>
+                        </div>
+                        <div class="checkout_order_info_shopping_cart_price">
+                            <span>3р. 50 коп.</span>
+                        </div>
+                    </div>
+
+
+                </div>
+                    <div class="checkout_order_info_overall_results">
+                        <div class="item"><span>Промежуточный итог</span><span>12р. 50 коп.</span></div>
+                        <div class="item"><span>Доставка</span><span>5р. 00 коп.</span></div>
+                        <div class="item result"><span>Итог</span><span>17р. 50 коп.</span></div>
+                    </div>
+                    <div class="mobile_checkout_order_info_button">
+                        <a>оформить</a>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

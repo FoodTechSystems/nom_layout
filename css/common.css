@@ -7,8 +7,20 @@ button::-moz-focus-inner{}
 .wrapper{
 	margin-top: 86px;
 	min-width: 300px;
+	max-width: 90%;
+	padding: 0 5%;
+	margin: 86px 0 0 0;
 }
 
 .header-component{
 	display: -webkit-box;
+}
+
+.header-component.header-block header{
+	position: inherit;
+	width: 100%;
+}
+
+.no-margin-wrapper{
+	margin: 0;
 }

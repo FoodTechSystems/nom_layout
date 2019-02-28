@@ -1,0 +1,105 @@
+﻿@font-face {
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat.ttf);
+}
+
+body {
+    background-color: #F2F4F5;
+    min-height: 100vh;
+    font-family: Montserrat;
+    font-style: normal;
+    line-height: normal;
+}
+h3 {
+    font-size:24px;
+    margin:5px 5px;
+}
+    body .foodtypewrapper {
+        width:100%;
+    }
+        body .foodtypewrapper .foodtype {
+            width:100%;
+            margin:0px;
+            float:left;
+            text-align:center;
+        }
+            body .foodtypewrapper .foodtype .image {
+                width: 70%;
+                margin: auto;
+                background-position: center;
+                background-size: contain;
+                background-repeat:no-repeat;
+                overflow: hidden;
+            }
+                body .foodtypewrapper .foodtype .image:before {
+                    content: "";
+                    padding-top: 100%;
+                    float: left;
+                }
+            body .foodtypewrapper .foodtype p {
+                margin:10px 0px;
+                font-size:10px;
+            }
+            body .foodtypewrapper .foodtype .burger {
+                background-image: url('../images/burger.svg');
+            }
+            body .foodtypewrapper .foodtype .pizza {
+                background-image: url('../images/pizza.svg');
+            }
+            body .foodtypewrapper .foodtype .sushi {
+                background-image: url('../images/sushi.svg');
+            }
+            body .foodtypewrapper .foodtype .kebab {
+                background-image: url('../images/kebab.svg');
+            }
+            body .foodtypewrapper .foodtype .coffee {
+                background-image: url('../images/coffee.svg');
+            }
+    body .restourantswrapper {
+        margin:20px 0px;
+        width: 100%;
+        display:inline-block;
+    }
+
+        body .restourantswrapper .restourant {
+            width: 100%;
+            margin: 0px;
+            float: left;
+        }
+
+            body .restourantswrapper .restourant .image {
+                width: 100%;
+                margin: auto;
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                overflow: hidden;
+                position:relative;
+            }
+
+                body .restourantswrapper .restourant .image:before {
+                    content: "";
+                    padding-top: 60%;
+                    float: left;
+                }
+                body .restourantswrapper .restourant .image .time {
+                    position: absolute;
+                    bottom: 0px;
+                    left: 0px;
+                    width: 100px;
+                    height: 20px;
+                    background-color: #F2F4F5;
+                    text-align: center;
+                    font-size: 12px;
+                    line-height: 20px;
+                }
+            body .restourantswrapper .restourant .rating {
+                float:left;
+
+            }
+            body .restourantswrapper .restourant p.order {
+                white-space: pre;
+                font-size:14px;
+                margin:0px 0px 0px 5px;
+                display:inline-block;
+            }
