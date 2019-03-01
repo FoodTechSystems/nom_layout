@@ -1,0 +1,243 @@
+﻿<!DOCTYPE html>
+<html lang="ru" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Рестораны</title>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+    <link href="../../Documents/Работа/Доставка%20еды/IT/Верстка/css/normalize.css" rel="stylesheet" />
+    <link href="../../Documents/Работа/Доставка%20еды/IT/Верстка/css/header.css" rel="stylesheet" />
+    <link href="./css/order.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../../Documents/Работа/Доставка%20еды/IT/Верстка/css/common.css">
+</head>
+<body>
+
+<div class="header-component header-block ">
+    <header>
+        <div class="header_container">
+            <div class="header_logo_container">
+                <img src="../../Documents/Работа/Доставка%20еды/IT/Верстка/images/logo.svg" alt="">
+            </div>
+            <!-- <div class="header_categories_btn_countainer">
+                <a>Категории</a>
+            </div> -->
+            <!-- <div class="header_order_info">
+                <div class="header_order_info_time">Сейчас</div>
+                <div class="header_order_info_location">Минск, ул. Романовская Слобода 100</div>
+            </div> -->
+            
+            <div class="header_user_info">
+                <div class="header_user_info_sign_in_block">
+                    <a class="header_user_info_btn_sign_in" href="">войти</a>
+                </div>
+                <!-- <div class="header_user_info_user_basket">
+                    <a class="user_basket" href=""></a>
+                </div> -->
+            </div>
+
+            <div class="mobile_open_menu_block"></div>
+        </div>
+    </header>
+
+    <div class="mobile_bar_menu_block">
+        <div class="mobile_bar_menu_background"></div>
+        <div class="mobile_bar_menu hidden">
+            <div class="mobile_bar_menu_wrapper">
+                <div class="mobile_bar_menu_close_btn"></div>
+                <div class="mobile_header_logo_container">
+                    <img src="../../Documents/Работа/Доставка%20еды/IT/Верстка/images/logo.png" alt="">
+                </div>
+                <div class="mobile_main_links">
+                    <a class="sign_in" href="">Войти</a>
+                    <a class="restaurants" href="">Рестораны</a>
+                    <a class="reach" href="">Связаться</a>
+                </div>
+
+                <div class="mobile_navigation_links">
+                    <a class="" href="">О проекте</a>
+                    <a class="" href="">Вопросы и ответы</a>
+                    <a class="" href="">Пользовательское соглашение</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="no-margin-wrapper wrapper">
+
+    <div class="order checked">
+        <div class="desctop_hide goback">
+            <a href="">назад</a>
+        </div>
+        <h1>Оформление заказа</h1>
+
+
+        <div class="checkout_wrapper">
+            <div class="checkout_content">
+                <div class="checkout_content_block">
+                    <div class="checkout_content_block_header">
+                        1. Время доставки
+                    </div>
+                    <div class="checkout_content_block_content">
+                        <div>В течении <span id="delivery_time">10-20 мин</span></div>
+                    </div>
+                </div>
+                <div class="checkout_content_block">
+                    <div class="checkout_content_block_header">
+                        2. Адрес доставки
+                    </div>
+                    <div class="checkout_content_block_content delivery_info">
+                        <div class="checkout_content_block_delivery_map">
+                            <div>
+                                <img src="../../Documents/Работа/Доставка%20еды/IT/Верстка/images/map.png" alt="">
+                            </div>
+                        </div>
+                        <div class="checkout_content_block_delivery_info">
+                            <div class="checkout_content_block_delivery_info_buttons">
+                                <a id="delivery_info_to_door" class="selected">Доставка до двери</a>
+                                <a id="delivery_info_to_house">Получить заказ снаружи</a>
+                            </div>
+
+                            <div class="checkout_content_block_delivery_info_input_group">
+                                <input class="checkout_content_block_delivery_adress_input" type="text" placeholder="Адрес доставки">
+                            </div>
+                            <div class="checkout_content_block_delivery_info_input_group checkout_content_block_delivery_info_input_group_details">
+                                <input type="text" placeholder="Квартира">
+                                <input type="text" placeholder="Офис">
+                                <input type="text" placeholder="Этаж">
+                            </div>
+                            <div class="checkout_content_block_delivery_info_input_group">
+                                <input type="text" placeholder="Добавить примечание по доставке">
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="checkout_content_block">
+                    <div class="checkout_content_block_header">
+                        3. Оплата
+                    </div>
+                    <div class="checkout_content_block_content">
+                        <div class="checkout_content_block_content_payment_select">
+                            <a id="payment_select_card">Банковской картой</a>
+                            <a class="selected" id="payment_select_cash">Наличными курьеру</a>
+                        </div>
+                        <div class="checkout_content_block_content_payment_cash_block" style="display: block;">
+                            <input type="text" placeholder="Подготовить сдачу с">
+                        </div>
+                        <div class="checkout_content_block_content_payment_card_block">
+                            <a id="checkout_content_block_content_payment_add_card">Добавить карту</a>
+
+                           
+                        </div>
+                        <a id="i_have_promocode">У меня есть промокод</a>
+                        <div class="promocode_insert_block">
+                            <input type="text" placeholder="Введите промокод">
+                            <a сlass="promocode_insert_block_accept_action">Применить</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="checkout_order_info_block">
+                <div class="checkout_order_info_container">
+                    <div class="checkout_order_info">
+                        <div class="checkout_order_info_header">
+                            <span>Ваш заказ из ресторана</span>
+                            <h2>McDonalds (пр. Держинского 96)</h2>
+                        </div>
+                        <div class="checkout_order_info_button">
+                            <a>оплатить</a>
+                        </div>
+                        <div class="checkout_order_info_shopping_cart">
+                            <div class="item">
+                                <div class="checkout_order_info_shopping_cart_count">
+                                    
+                                </div>
+                                <div class="checkout_order_info_shopping_cart_description">
+                                    <h3>Пара за 3,50</h3>
+                                    <span>Чизбургер</span>
+                                    <span>Картошка фри</span>
+                                    <a href="">Удалить</a>
+                                </div>
+                                <div class="checkout_order_info_shopping_cart_price">
+                                    <span>3р. 50 коп.</span>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="checkout_order_info_shopping_cart_count">
+                                    
+                                </div>
+                                <div class="checkout_order_info_shopping_cart_description">
+                                    <h3>Пара за 3,50</h3>
+                                    <span>Чизбургер</span>
+                                    <span>Картошка фри</span>
+                                    <a href="">Удалить</a>
+                                </div>
+                                <div class="checkout_order_info_shopping_cart_price">
+                                    <span>3р. 50 коп.</span>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="checkout_order_info_overall_results">
+                            <div class="item"><span>Промежуточный итог</span><span>12р. 50 коп.</span></div>
+                            <div class="item"><span>Доставка</span><span>5р. 00 коп.</span></div>
+                            <div class="item result"><span>Итог</span><span>17р. 50 коп.</span></div>
+                        </div>
+                        <div class="mobile_checkout_order_info_button">
+                            <a>оформить</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+
+    <script>
+
+        $(".checkout_content_block_content_payment_select a").click(function() {
+            $(".checkout_content_block_content_payment_select a").removeClass("selected");
+                $(this).addClass("selected");
+                switch(this.id){
+                    case "payment_select_card":
+                        $(".checkout_content_block_content_payment_card_block").css("display","inherit");
+                        $(".checkout_content_block_content_payment_cash_block").css("display","none");
+                    break;
+
+                    case "payment_select_cash":
+                        $(".checkout_content_block_content_payment_card_block").css("display","none");
+                        $(".checkout_content_block_content_payment_cash_block").css("display","inherit");
+                    break;
+                }
+        });
+
+        $(".checkout_content_block_delivery_info_buttons a").click(function() {
+            $(".checkout_content_block_delivery_info_buttons a").removeClass("selected");
+                $(this).addClass("selected");
+                switch(this.id){
+                    case "delivery_info_to_house":
+                        $(".checkout_content_block_delivery_info_input_group_details").css("display","none");
+                    break;
+
+                    case "delivery_info_to_door":
+                        $(".checkout_content_block_delivery_info_input_group_details").css("display","inherit");
+                    break;
+                }
+        });
+
+        $("#i_have_promocode").click(function() {
+            $(this).css("display","none");
+            $(".promocode_insert_block").css("display","inherit");
+        });
+    </script>
+
+
+</body>
+</html>
