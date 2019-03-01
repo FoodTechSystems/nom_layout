@@ -1,14 +1,3 @@
-@font-face {
-    font-family: Montserrat;
-    src: url(../fonts/Montserrat.ttf);
-}
-a {}
-button::-moz-focus-inner{}
-
-body{
-    background: #ccc;
-}
-
 header{
     position: fixed;
     top: 0;
