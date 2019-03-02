@@ -3,6 +3,7 @@ header{
     top: 0;
     left: 0;
     right: 0;
+    z-index: 9999;
     min-width: 300px;
     min-height: 46px;
     padding: 23px 0 17px 0;
@@ -12,7 +13,7 @@ header{
 
 header .header_container{
     display: flex;
-    width: 80%;
+    width: calc(100% - 100px);
     margin: auto;
 }
 
@@ -99,9 +100,9 @@ header .header_categories_btn_countainer{
 
 header .header_categories_btn_countainer:before{
     content: url('../images/catgories.svg');
-    width: 28px;
-    height: 28px;
-    margin: -5px 9px 0 0;
+    width: 21px;
+    height: 21px;
+    margin: -1.5px 9px 0 0;
 
 }
 
@@ -114,6 +115,7 @@ header .header_order_info .header_order_info_location{
 
 }
 
+
 header .header_order_info div{
     padding: 8px 16px 7px 15px;
     border: 1px solid rgba(128, 128, 128, 0.2);
@@ -124,7 +126,7 @@ header .header_order_info div{
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    font-size: 14px;
+    font-size: 12px;
     text-align: center;
 
     color: #1E282C;

@@ -1,0 +1,87 @@
+.categories_component{
+    background: #F2F4F5;
+    display: none;
+    box-shadow: 0px 10px 10px 0px rgba(35, 47, 52, 0.25);
+    width: 100%;
+    position: fixed;
+    top: 86px;
+    z-index: 10000;
+    border-top: 1px solid rgba(128, 128, 128, 0.2);
+}
+.categories_component .categories_container{
+    width: calc(100% - 100px);
+    margin: auto;
+    display: flex;
+    padding: 45px 0 99px;
+}
+.categories_component .categories_container .recommended{
+    flex: 669;
+}
+.categories_component .categories_container .popular{
+    flex: 500;
+}
+.categories_component .categories_container .recommended > span,
+.categories_component .categories_container .popular > span{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    font-size: 24px;
+    margin-bottom: 30px;
+    display: block;
+
+    color: #232F34;
+}
+.categories_component .categories_container .recommended .content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.categories_component .categories_container .recommended .content a {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 18px;
+    text-decoration: none;
+    margin: 12px 0;
+
+    color: #1E282C;
+}
+.categories_component .categories_container .recommended .content a:hover{
+    text-decoration: underline;
+}
+
+.categories_component .categories_container .popular .content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.categories_component .categories_container .popular .content a div {
+    width: calc(100% - 10px);
+    height: 150px;
+    margin: 5px;
+    background-blend-mode: multiply;
+    background-color: rgba(35, 47, 52, 0.3);
+    border-radius: 2px;
+    position: relative;
+    background-size: cover;
+    text-align: center;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    font-size: 24px;
+    text-decoration: none;
+    text-align: center;
+
+    color: #F2F4F5;
+}
+
+.categories_component .categories_container .popular .content a div span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
