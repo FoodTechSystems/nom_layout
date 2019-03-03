@@ -7,12 +7,13 @@
     <link href="./css/normalize.css" rel="stylesheet" />
     <link href="./css/common.css" rel="stylesheet" >
     <link href="./css/header.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/categories.css">
     <link href="./css/restaurant.css" rel="stylesheet" />
 </head>
 <body>
-    <div class="header-component">
+<div class="header-component">
     <header>
-        <div class="header_container">
+        <div class="header_container container">
             <div class="header_logo_container">
                 <img src="images/logo.svg" alt="">
             </div>
@@ -20,7 +21,7 @@
                 <a>Категории</a>
             </div>
             <div class="header_order_info">
-                <div class="header_order_info_time">Сейчас</div>
+                <!--<div class="header_order_info_time">Сейчас</div>-->
                 <div class="header_order_info_location">Минск, ул. Романовская Слобода 100</div>
             </div>
 
@@ -32,10 +33,57 @@
                     <a class="user_basket" href=""></a>
                 </div>
             </div>
-
             <div class="mobile_open_menu_block"></div>
         </div>
     </header>
+    <div class="categories_component">
+        <div class="categories_container">
+            <div class="recommended">
+                <span>Рекомендуем</span>
+                <div class="content">
+                    <a href="">American</a>
+                    <a href="">Asian</a>
+                    <a href="">Bakery</a>
+                    <a href="">Bar Food</a>
+                    <a href="">BBQ</a>
+                    <a href="">Breakfast and Brunch</a>
+                    <a href="">British</a>
+                    <a href="">Burgers</a>
+                    <a href="">Cafe</a>
+                    <a href="">Chicken</a>
+                    <a href="">Comfort Food</a>
+                    <a href="">Desserts</a>
+                    <a href="">English</a>
+                    <a href="">European</a>
+                    <a href="">Greek</a>
+                    <a href="">Healthy</a>
+                    <a href="">Ice Cream and Frozen Yogurt</a>
+                    <a href="">Indian</a>
+                    <a href="">Italian</a>
+                    <a href="">Japanese</a>
+                    <a href="">Juice and Smoothies</a>
+                    <a href="">Korean</a>
+                    <a href="">Modern European</a>
+                    <a href="">Pizza</a>
+                    <a href="">Salads</a>
+                    <a href="">Sandwiches</a>
+                    <a href="">Scottish</a>
+                    <a href="">Turkish</a>
+                    <a href="">Vietnamese</a>
+                </div>
+            </div>
+            <div class="popular">
+                <span>Популярное</span>
+                <div class="content">
+                    <a><div style="background-image: url('./images/burger.jpg')"><span>Бургеры</span></div></a>
+                    <a><div style="background-image: url('./images/pizza.jpg')"><span>Пицца</span></div></a>
+                    <a><div style="background-image: url('./images/pasta.png')"><span>Паста</span></div></a>
+                    <a><div style="background-image: url('./images/sushi.jpg')"><span>Суши</span></div></a>
+                    <a><div style="background-image: url('./images/salads.png')"><span>Салаты</span></div></a>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="mobile_bar_menu_block">
         <div class="mobile_bar_menu_background"></div>
         <div class="mobile_bar_menu hidden">
@@ -59,9 +107,700 @@
         </div>
     </div>
 </div>
-    <div class="wrapper">
+<div class="wrapper">
         <div class="restaurant_page">
+            <div class="restaurant_information" style="background-image: url('./images/mcdonalds.jpg'), linear-gradient(180deg, rgba(0, 0, 0, 0) -18.92%, rgba(0, 0, 0, 0.5) 100%);">
+                <div class="restaurant_information_content container" >
+                    <div>
+                        <div class="restaurant_information_content_rate">
+                            <span class="rating_stars top">4.9</span>
+                        </div>
 
+                    </div>
+                    <h1>McDonalds</h1>
+                    <div class="free_delivery_info">
+                        <span>Бесплатная доставка от 17 руб</span>
+                    </div>
+                </div>
+            </div>
+            <div class="restaurant_content_wrapper ">
+                <div class="restaurant_content_header">
+                    <div class="container">
+                        <div class="restaurant_menu_select">
+                            <select name="menu" class="restaurant_menu_selector">
+                                <option value="">Breakfast</option>
+                                <option value="">Lunch &amp; Dinner</option>
+                            </select>
+                        </div>
+                        <div class="restaurant_act_menu_navigation ">
+                            <ul>
+                                <li> <a class="selected">Самое популярное</a></li>
+                                <li> <a>МакМаффин</a></li>
+                                <li> <a>МакТост</a></li>
+                                <li> <a>Ролл</a></li>
+                                <li> <a>Омлет</a></li>
+                                <li> <a>МакФлурри</a></li>
+                                <li> <a>МакСанди</a></li>
+                                <li> <a>Хэппи Мил</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="restaurant_content_wrapper_container container">
+                    <div class="rcp_content">
+                        <div class="rcp_category">
+                            <h2>Самое популярное</h2>
+                            <div class="rcp_category_content">
+                                <a class="rcp_dish">
+                                    <div class="rcp_dish_wrapper">
+                                        <div class="rcp_dish_content">
+                                            <h3>Пара за 3,50</h3>
+                                            <span class="description">Чизбургер с картошкой фри</span>
+                                            <span class="price">3 р. 50 коп.</span>
+                                        </div>
+                                        <div class="rcp_dish_image">
+                                            <img src="" alt="">
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="rcp_dish">
+                                    <div class="rcp_dish_wrapper">
+                                        <div class="rcp_dish_content">
+                                            <h3>Пара за 3,50</h3>
+                                            <span class="description">Чизбургер с картошкой фри</span>
+                                            <span class="price">3 р. 50 коп.</span>
+                                        </div>
+                                        <div class="rcp_dish_image">
+                                            <img src="" alt="">
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="rcp_dish">
+                                    <div class="rcp_dish_wrapper">
+                                        <div class="rcp_dish_content">
+                                            <h3>Пара за 3,50</h3>
+                                            <span class="description">Чизбургер с картошкой фри</span>
+                                            <span class="price">3 р. 50 коп.</span>
+                                        </div>
+                                        <div class="rcp_dish_image">
+                                            <img src="" alt="">
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="rcp_dish">
+                                    <div class="rcp_dish_wrapper">
+                                        <div class="rcp_dish_content">
+                                            <h3>Пара за 3,50</h3>
+                                            <span class="description">Чизбургер с картошкой фри</span>
+                                            <span class="price">3 р. 50 коп.</span>
+                                        </div>
+                                        <div class="rcp_dish_image">
+                                            <img src="" alt="">
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="rcp_dish">
+                                    <div class="rcp_dish_wrapper">
+                                        <div class="rcp_dish_content">
+                                            <h3>Пара за 3,50</h3>
+                                            <span class="description">Чизбургер с картошкой фри</span>
+                                            <span class="price">3 р. 50 коп.</span>
+                                        </div>
+                                        <div class="rcp_dish_image">
+                                            <img src="" alt="">
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="rcp_dish">
+                                    <div class="rcp_dish_wrapper">
+                                        <div class="rcp_dish_content">
+                                            <h3>Пара за 3,50</h3>
+                                            <span class="description">Чизбургер с картошкой фри</span>
+                                            <span class="price">3 р. 50 коп.</span>
+                                        </div>
+                                        <div class="rcp_dish_image">
+                                            <img src="" alt="">
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="rcp_dish">
+                                    <div class="rcp_dish_wrapper">
+                                        <div class="rcp_dish_content">
+                                            <h3>Пара за 3,50</h3>
+                                            <span class="description">Чизбургер с картошкой фри</span>
+                                            <span class="price">3 р. 50 коп.</span>
+                                        </div>
+                                        <div class="rcp_dish_image">
+                                            <img src="" alt="">
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="rcp_dish">
+                                    <div class="rcp_dish_wrapper">
+                                        <div class="rcp_dish_content">
+                                            <h3>Пара за 3,50</h3>
+                                            <span class="description">Чизбургер с картошкой фри</span>
+                                            <span class="price">3 р. 50 коп.</span>
+                                        </div>
+                                        <div class="rcp_dish_image">
+                                            <img src="" alt="">
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="rcp_dish">
+                                    <div class="rcp_dish_wrapper">
+                                        <div class="rcp_dish_content">
+                                            <h3>Пара за 3,50</h3>
+                                            <span class="description">Чизбургер с картошкой фри</span>
+                                            <span class="price">3 р. 50 коп.</span>
+                                        </div>
+                                        <div class="rcp_dish_image">
+                                            <img src="" alt="">
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="rcp_dish">
+                                    <div class="rcp_dish_wrapper">
+                                        <div class="rcp_dish_content">
+                                            <h3>Пара за 3,50</h3>
+                                            <span class="description">Чизбургер с картошкой фри</span>
+                                            <span class="price">3 р. 50 коп.</span>
+                                        </div>
+                                        <div class="rcp_dish_image">
+                                            <img src="" alt="">
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="rcp_dish">
+                                    <div class="rcp_dish_wrapper">
+                                        <div class="rcp_dish_content">
+                                            <h3>Пара за 3,50</h3>
+                                            <span class="description">Чизбургер с картошкой фри</span>
+                                            <span class="price">3 р. 50 коп.</span>
+                                        </div>
+                                        <div class="rcp_dish_image">
+                                            <img src="" alt="">
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="rcp_dish">
+                                    <div class="rcp_dish_wrapper">
+                                        <div class="rcp_dish_content">
+                                            <h3>Пара за 3,50</h3>
+                                            <span class="description">Чизбургер с картошкой фри</span>
+                                            <span class="price">3 р. 50 коп.</span>
+                                        </div>
+                                        <div class="rcp_dish_image">
+                                            <img src="" alt="">
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="rcp_dish">
+                                    <div class="rcp_dish_wrapper">
+                                        <div class="rcp_dish_content">
+                                            <h3>Пара за 3,50</h3>
+                                            <span class="description">Чизбургер с картошкой фри</span>
+                                            <span class="price">3 р. 50 коп.</span>
+                                        </div>
+                                        <div class="rcp_dish_image">
+                                            <img src="" alt="">
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="rcp_dish">
+                                    <div class="rcp_dish_wrapper">
+                                        <div class="rcp_dish_content">
+                                            <h3>Пара за 3,50</h3>
+                                            <span class="description">Чизбургер с картошкой фри</span>
+                                            <span class="price">3 р. 50 коп.</span>
+                                        </div>
+                                        <div class="rcp_dish_image">
+                                            <img src="" alt="">
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="rcp_dish">
+                                    <div class="rcp_dish_wrapper">
+                                        <div class="rcp_dish_content">
+                                            <h3>Пара за 3,50</h3>
+                                            <span class="description">Чизбургер с картошкой фри</span>
+                                            <span class="price">3 р. 50 коп.</span>
+                                        </div>
+                                        <div class="rcp_dish_image">
+                                            <img src="" alt="">
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="rcp_dish">
+                                    <div class="rcp_dish_wrapper">
+                                        <div class="rcp_dish_content">
+                                            <h3>Пара за 3,50</h3>
+                                            <span class="description">Чизбургер с картошкой фри</span>
+                                            <span class="price">3 р. 50 коп.</span>
+                                        </div>
+                                        <div class="rcp_dish_image">
+                                            <img src="" alt="">
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="rcp_dish">
+                                    <div class="rcp_dish_wrapper">
+                                        <div class="rcp_dish_content">
+                                            <h3>Пара за 3,50</h3>
+                                            <span class="description">Чизбургер с картошкой фри</span>
+                                            <span class="price">3 р. 50 коп.</span>
+                                        </div>
+                                        <div class="rcp_dish_image">
+                                            <img src="" alt="">
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="rcp_dish">
+                                    <div class="rcp_dish_wrapper">
+                                        <div class="rcp_dish_content">
+                                            <h3>Пара за 3,50</h3>
+                                            <span class="description">Чизбургер с картошкой фри</span>
+                                            <span class="price">3 р. 50 коп.</span>
+                                        </div>
+                                        <div class="rcp_dish_image">
+                                            <img src="" alt="">
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="rcp_dish">
+                                    <div class="rcp_dish_wrapper">
+                                        <div class="rcp_dish_content">
+                                            <h3>Пара за 3,50</h3>
+                                            <span class="description">Чизбургер с картошкой фри</span>
+                                            <span class="price">3 р. 50 коп.</span>
+                                        </div>
+                                        <div class="rcp_dish_image">
+                                            <img src="" alt="">
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="rcp_dish">
+                                    <div class="rcp_dish_wrapper">
+                                        <div class="rcp_dish_content">
+                                            <h3>Пара за 3,50</h3>
+                                            <span class="description">Чизбургер с картошкой фри</span>
+                                            <span class="price">3 р. 50 коп.</span>
+                                        </div>
+                                        <div class="rcp_dish_image">
+                                            <img src="" alt="">
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="rcp_dish">
+                                    <div class="rcp_dish_wrapper">
+                                        <div class="rcp_dish_content">
+                                            <h3>Пара за 3,50</h3>
+                                            <span class="description">Чизбургер с картошкой фри</span>
+                                            <span class="price">3 р. 50 коп.</span>
+                                        </div>
+                                        <div class="rcp_dish_image">
+                                            <img src="" alt="">
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="rcp_dish">
+                                    <div class="rcp_dish_wrapper">
+                                        <div class="rcp_dish_content">
+                                            <h3>Пара за 3,50</h3>
+                                            <span class="description">Чизбургер с картошкой фри</span>
+                                            <span class="price">3 р. 50 коп.</span>
+                                        </div>
+                                        <div class="rcp_dish_image">
+                                            <img src="" alt="">
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="rcp_dish">
+                                    <div class="rcp_dish_wrapper">
+                                        <div class="rcp_dish_content">
+                                            <h3>Пара за 3,50</h3>
+                                            <span class="description">Чизбургер с картошкой фри</span>
+                                            <span class="price">3 р. 50 коп.</span>
+                                        </div>
+                                        <div class="rcp_dish_image">
+                                            <img src="" alt="">
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="rcp_dish">
+                                    <div class="rcp_dish_wrapper">
+                                        <div class="rcp_dish_content">
+                                            <h3>Пара за 3,50</h3>
+                                            <span class="description">Чизбургер с картошкой фри</span>
+                                            <span class="price">3 р. 50 коп.</span>
+                                        </div>
+                                        <div class="rcp_dish_image">
+                                            <img src="" alt="">
+                                        </div>
+                                    </div>
+                                </a>
+
+                            </div>
+                        </div>
+                        <div class="rcp_category">
+                            <h2>Самое популярное</h2>
+                            <div class="rcp_category_content">
+                                <a class="rcp_dish">
+                                    <div class="rcp_dish_wrapper">
+                                        <div class="rcp_dish_content">
+                                            <h3>Пара за 3,50</h3>
+                                            <span class="description">Чизбургер с картошкой фри</span>
+                                            <span class="price">3 р. 50 коп.</span>
+                                        </div>
+                                        <div class="rcp_dish_image">
+                                            <img src="" alt="">
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="rcp_dish">
+                                    <div class="rcp_dish_wrapper">
+                                        <div class="rcp_dish_content">
+                                            <h3>Пара за 3,50</h3>
+                                            <span class="description">Чизбургер с картошкой фри</span>
+                                            <span class="price">3 р. 50 коп.</span>
+                                        </div>
+                                        <div class="rcp_dish_image">
+                                            <img src="" alt="">
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="rcp_dish">
+                                    <div class="rcp_dish_wrapper">
+                                        <div class="rcp_dish_content">
+                                            <h3>Пара за 3,50</h3>
+                                            <span class="description">Чизбургер с картошкой фри</span>
+                                            <span class="price">3 р. 50 коп.</span>
+                                        </div>
+                                        <div class="rcp_dish_image">
+                                            <img src="" alt="">
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="rcp_dish">
+                                    <div class="rcp_dish_wrapper">
+                                        <div class="rcp_dish_content">
+                                            <h3>Пара за 3,50</h3>
+                                            <span class="description">Чизбургер с картошкой фри</span>
+                                            <span class="price">3 р. 50 коп.</span>
+                                        </div>
+                                        <div class="rcp_dish_image">
+                                            <img src="" alt="">
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="rcp_dish">
+                                    <div class="rcp_dish_wrapper">
+                                        <div class="rcp_dish_content">
+                                            <h3>Пара за 3,50</h3>
+                                            <span class="description">Чизбургер с картошкой фри</span>
+                                            <span class="price">3 р. 50 коп.</span>
+                                        </div>
+                                        <div class="rcp_dish_image">
+                                            <img src="" alt="">
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="rcp_dish">
+                                    <div class="rcp_dish_wrapper">
+                                        <div class="rcp_dish_content">
+                                            <h3>Пара за 3,50</h3>
+                                            <span class="description">Чизбургер с картошкой фри</span>
+                                            <span class="price">3 р. 50 коп.</span>
+                                        </div>
+                                        <div class="rcp_dish_image">
+                                            <img src="" alt="">
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="rcp_dish">
+                                    <div class="rcp_dish_wrapper">
+                                        <div class="rcp_dish_content">
+                                            <h3>Пара за 3,50</h3>
+                                            <span class="description">Чизбургер с картошкой фри</span>
+                                            <span class="price">3 р. 50 коп.</span>
+                                        </div>
+                                        <div class="rcp_dish_image">
+                                            <img src="" alt="">
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="rcp_dish">
+                                    <div class="rcp_dish_wrapper">
+                                        <div class="rcp_dish_content">
+                                            <h3>Пара за 3,50</h3>
+                                            <span class="description">Чизбургер с картошкой фри</span>
+                                            <span class="price">3 р. 50 коп.</span>
+                                        </div>
+                                        <div class="rcp_dish_image">
+                                            <img src="" alt="">
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="rcp_dish">
+                                    <div class="rcp_dish_wrapper">
+                                        <div class="rcp_dish_content">
+                                            <h3>Пара за 3,50</h3>
+                                            <span class="description">Чизбургер с картошкой фри</span>
+                                            <span class="price">3 р. 50 коп.</span>
+                                        </div>
+                                        <div class="rcp_dish_image">
+                                            <img src="" alt="">
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="rcp_dish">
+                                    <div class="rcp_dish_wrapper">
+                                        <div class="rcp_dish_content">
+                                            <h3>Пара за 3,50</h3>
+                                            <span class="description">Чизбургер с картошкой фри</span>
+                                            <span class="price">3 р. 50 коп.</span>
+                                        </div>
+                                        <div class="rcp_dish_image">
+                                            <img src="" alt="">
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="rcp_dish">
+                                    <div class="rcp_dish_wrapper">
+                                        <div class="rcp_dish_content">
+                                            <h3>Пара за 3,50</h3>
+                                            <span class="description">Чизбургер с картошкой фри</span>
+                                            <span class="price">3 р. 50 коп.</span>
+                                        </div>
+                                        <div class="rcp_dish_image">
+                                            <img src="" alt="">
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="rcp_dish">
+                                    <div class="rcp_dish_wrapper">
+                                        <div class="rcp_dish_content">
+                                            <h3>Пара за 3,50</h3>
+                                            <span class="description">Чизбургер с картошкой фри</span>
+                                            <span class="price">3 р. 50 коп.</span>
+                                        </div>
+                                        <div class="rcp_dish_image">
+                                            <img src="" alt="">
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="rcp_dish">
+                                    <div class="rcp_dish_wrapper">
+                                        <div class="rcp_dish_content">
+                                            <h3>Пара за 3,50</h3>
+                                            <span class="description">Чизбургер с картошкой фри</span>
+                                            <span class="price">3 р. 50 коп.</span>
+                                        </div>
+                                        <div class="rcp_dish_image">
+                                            <img src="" alt="">
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="rcp_dish">
+                                    <div class="rcp_dish_wrapper">
+                                        <div class="rcp_dish_content">
+                                            <h3>Пара за 3,50</h3>
+                                            <span class="description">Чизбургер с картошкой фри</span>
+                                            <span class="price">3 р. 50 коп.</span>
+                                        </div>
+                                        <div class="rcp_dish_image">
+                                            <img src="" alt="">
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="rcp_dish">
+                                    <div class="rcp_dish_wrapper">
+                                        <div class="rcp_dish_content">
+                                            <h3>Пара за 3,50</h3>
+                                            <span class="description">Чизбургер с картошкой фри</span>
+                                            <span class="price">3 р. 50 коп.</span>
+                                        </div>
+                                        <div class="rcp_dish_image">
+                                            <img src="" alt="">
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="rcp_dish">
+                                    <div class="rcp_dish_wrapper">
+                                        <div class="rcp_dish_content">
+                                            <h3>Пара за 3,50</h3>
+                                            <span class="description">Чизбургер с картошкой фри</span>
+                                            <span class="price">3 р. 50 коп.</span>
+                                        </div>
+                                        <div class="rcp_dish_image">
+                                            <img src="" alt="">
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="rcp_dish">
+                                    <div class="rcp_dish_wrapper">
+                                        <div class="rcp_dish_content">
+                                            <h3>Пара за 3,50</h3>
+                                            <span class="description">Чизбургер с картошкой фри</span>
+                                            <span class="price">3 р. 50 коп.</span>
+                                        </div>
+                                        <div class="rcp_dish_image">
+                                            <img src="" alt="">
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="rcp_dish">
+                                    <div class="rcp_dish_wrapper">
+                                        <div class="rcp_dish_content">
+                                            <h3>Пара за 3,50</h3>
+                                            <span class="description">Чизбургер с картошкой фри</span>
+                                            <span class="price">3 р. 50 коп.</span>
+                                        </div>
+                                        <div class="rcp_dish_image">
+                                            <img src="" alt="">
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="rcp_dish">
+                                    <div class="rcp_dish_wrapper">
+                                        <div class="rcp_dish_content">
+                                            <h3>Пара за 3,50</h3>
+                                            <span class="description">Чизбургер с картошкой фри</span>
+                                            <span class="price">3 р. 50 коп.</span>
+                                        </div>
+                                        <div class="rcp_dish_image">
+                                            <img src="" alt="">
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="rcp_dish">
+                                    <div class="rcp_dish_wrapper">
+                                        <div class="rcp_dish_content">
+                                            <h3>Пара за 3,50</h3>
+                                            <span class="description">Чизбургер с картошкой фри</span>
+                                            <span class="price">3 р. 50 коп.</span>
+                                        </div>
+                                        <div class="rcp_dish_image">
+                                            <img src="" alt="">
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="rcp_dish">
+                                    <div class="rcp_dish_wrapper">
+                                        <div class="rcp_dish_content">
+                                            <h3>Пара за 3,50</h3>
+                                            <span class="description">Чизбургер с картошкой фри</span>
+                                            <span class="price">3 р. 50 коп.</span>
+                                        </div>
+                                        <div class="rcp_dish_image">
+                                            <img src="" alt="">
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="rcp_dish">
+                                    <div class="rcp_dish_wrapper">
+                                        <div class="rcp_dish_content">
+                                            <h3>Пара за 3,50</h3>
+                                            <span class="description">Чизбургер с картошкой фри</span>
+                                            <span class="price">3 р. 50 коп.</span>
+                                        </div>
+                                        <div class="rcp_dish_image">
+                                            <img src="" alt="">
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="rcp_dish">
+                                    <div class="rcp_dish_wrapper">
+                                        <div class="rcp_dish_content">
+                                            <h3>Пара за 3,50</h3>
+                                            <span class="description">Чизбургер с картошкой фри</span>
+                                            <span class="price">3 р. 50 коп.</span>
+                                        </div>
+                                        <div class="rcp_dish_image">
+                                            <img src="" alt="">
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="rcp_dish">
+                                    <div class="rcp_dish_wrapper">
+                                        <div class="rcp_dish_content">
+                                            <h3>Пара за 3,50</h3>
+                                            <span class="description">Чизбургер с картошкой фри</span>
+                                            <span class="price">3 р. 50 коп.</span>
+                                        </div>
+                                        <div class="rcp_dish_image">
+                                            <img src="" alt="">
+                                        </div>
+                                    </div>
+                                </a>
+
+                            </div>
+                        </div>
+                        <div class="restaurant_business_information">
+                            <p>ИП Ильин Иван Андреевич, 680013, г. Хабаровск, ул. Лермонтова, д. 51, корп. Б, кв. 30, ИНН 270394995705, рег.номер 318272400049198.</p>
+                        </div>
+                    </div>
+                    <div class="rcp_sidebar">
+                        <div class="checkout_order_info_container">
+                            <div class="checkout_order_info_block">
+                                <div class="checkout_order_info">
+                                    <!--<div class="checkout_order_info_header">-->
+                                        <!--<span>Ваш заказ из ресторана</span>-->
+                                        <!--<h2>McDonalds (пр. Держинского 96)</h2>-->
+                                    <!--</div>-->
+                                    <div class="checkout_order_info_button">
+                                        <a>оформить</a>
+                                    </div>
+                                    <div class="checkout_order_info_shopping_cart">
+                                        <div class="item">
+                                            <div class="checkout_order_info_shopping_cart_count">
+
+                                            </div>
+                                            <div class="checkout_order_info_shopping_cart_description">
+                                                <h3>Пара за 3,50</h3>
+                                                <!--<span>Чизбургер</span>-->
+                                                <!--<span>Картошка фри</span>-->
+                                                <a href="">Удалить</a>
+                                            </div>
+                                            <div class="checkout_order_info_shopping_cart_price">
+                                                <span>3р. 50 коп.</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="item">
+                                            <div class="checkout_order_info_shopping_cart_count">
+
+                                            </div>
+                                            <div class="checkout_order_info_shopping_cart_description">
+                                                <h3>Пара за 3,50</h3>
+                                                <span>Чизбургер</span>
+                                                <span>Картошка фри</span>
+                                                <a href="">Удалить</a>
+                                            </div>
+                                            <div class="checkout_order_info_shopping_cart_price">
+                                                <span>3р. 50 коп.</span>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                    <div class="checkout_order_info_overall_results">
+                                        <div class="item result"><span>Промежуточный итог</span><span>12р. 50 коп.</span></div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+
+                    </div>
+                </div>
+
+            </div>
         </div>
     </div>
 
