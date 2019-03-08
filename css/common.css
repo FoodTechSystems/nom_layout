@@ -38,3 +38,13 @@ button::-moz-focus-inner{}
 .no-margin-wrapper{
 	margin: 0;
 }
+
+.mobile{
+	display: none;
+}
+
+@media screen and (max-width: 768px){
+	.mobile{
+		display: inherit;
+	}
+}
