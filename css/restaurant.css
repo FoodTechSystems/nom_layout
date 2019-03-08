@@ -522,4 +522,88 @@
     .restaurant_content_wrapper .restaurant_content_header .restaurant_act_menu_navigation{
         display: none;
     }
+
+    .restaurant_information{
+        height: 226px;
+    }
+    .restaurant_information .restaurant_information_content .restaurant_information_content_rate{
+
+    }
+    .restaurant_information .restaurant_information_content .rating_stars{
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        font-size: 14px;
+
+        color: #F2F4F5;
+    }
+    .restaurant_information .restaurant_information_content .rating_stars:before{
+        width: 19px;
+        height: 19px;
+    }
+    .restaurant_information .restaurant_information_content h1{
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        font-size: 36px;
+
+        color: #F2F4F5;
+    }
+    .restaurant_information .restaurant_information_content .free_delivery_info{
+
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        line-height: normal;
+        font-size: 18px;
+
+        color: #F2F4F5;
+    }
+    .restaurant_content_wrapper .restaurant_content_wrapper_container .rcp_content .rcp_category h2{
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        font-size: 18px;
+
+        color: #1E282C;
+        margin: 20px 0 8px;
+    }
+    .rcp_category_content .rcp_dish .rcp_dish_wrapper .rcp_dish_content h3{
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        font-size: 14px;
+
+        color: #1E282C;
+    }
+    .rcp_category_content .rcp_dish .rcp_dish_wrapper .rcp_dish_content span.description{
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        line-height: normal;
+        font-size: 12px;
+
+        color: #1E282C;
+    }
+    .rcp_category_content .rcp_dish .rcp_dish_wrapper .rcp_dish_content span.price{
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        font-size: 12px;
+
+        color: #1E282C;
+    }
+    .restaurant_content_wrapper .restaurant_business_information{
+        font-size: 13px;
+    }
+
+
+
+
+
 }
