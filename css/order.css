@@ -309,7 +309,10 @@ h3 {
     display: none;
 }
 
-@media only screen and (max-width: 950px) and (min-width: 450px) {
+@media only screen and (max-width: 950px) and (min-width: 768px) {
+    .order .checkout_wrapper{
+        display: inherit;
+    }
     .order .checkout_content,
     .order .checkout_order_info_block {
         width: 100%;
@@ -319,10 +322,13 @@ h3 {
 
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 768px) {
     body{
-        background: #fff;
+        background: #fff!important;
         height: 100vh;
+    }
+    .header-component.header-block{
+        display: none;
     }
     .order{
         background: #fff;
@@ -432,10 +438,15 @@ h3 {
     .order.checked .checkout_content{
         display: block;
         width: calc(100% - 2*14px);
-        padding: 0 14px;
+        padding: 0 0 0 14px;
     }
     .order.checked .checkout_order_info_block {
         display: none;
+    }
+    .checkout_order_info_container{
+        padding: 16px 0px;
+        background: #FFFFFF;
+        box-shadow: none;
     }
 
 }
