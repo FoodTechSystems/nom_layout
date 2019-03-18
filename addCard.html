@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Добавить банковскую карту</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" href="css/main.css" type="text/css" />
+    <link rel="stylesheet" href="css/addCard.css" type="text/css" />
+
+</head>
+
+<body>
+
+    <div class="addCard">
+        <img class="addCard__close" src="images/Vector(Stroke).svg"></img>
+        <div class="addCard__title">Добавить банковскую карту</div>
+        <img src="images/burger_close.svg" alt="" class="addCard__burder-close">
+        <div class="addCard__lineMobile"></div>
+        <form action="" class="addCard__form">
+            <div class="addCard__nameAndNumber">
+                <input type="text" minlength='6' placeholder="Номер карты" name="cardOfNumber" />
+                <input type="text" minlength='2' class="addCard__form__nameOfCard" placeholder="Имя как на карте" name="nameOfCard" />
+            </div>
+
+            <div class="addCard__MMandCVV">
+                <input type="text" placeholder="MM/YY" name="MMYY" />
+                <input type="text" placeholder="CVV" name="CVV" />
+            </div>
+            <div class="addCard__ifno">Мы не сохраняем данные карты у себя.<br> Оплата происходит через сертифицированный провайдер платежей в Беларуси bePaid.</div>
+            <input class="addCard__button" type="submit" value='ДОБАВИТЬ' name="" />
+        </form>
+    </div>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.js"></script>
+    <script type="text/javascript" src="js/validate.js"></script>
+</body>
+
+</html>
