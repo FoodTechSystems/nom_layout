@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&subset=cyrillic,cyrillic-ext,latin-ext,vietnamese');
+
+body {
+    background-color: white;
+    font-family: Montserrat;
+}
+
+.adress {
+    position: relative;
+    width: 100%;
+    max-width: 731px;
+    margin-top: 80px;
+    background: #F2F4F5;
+}
+
+.adress__top-block {
+    padding: 38px 33px 50px;
+    box-sizing: border-box;
+}
+
+.adress__title {
+    font-size: 24px;
+    font-weight: bold;
+
+    color: #1E282C;
+}
+
+.adress__search {
+    margin-top: 42px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.adress__search__left .adress__search__button {
+    font-family: Montserrat;
+    float: left;
+    margin: 0;
+    width: auto;
+    height: auto;
+    border: 0;
+    padding: 9px 14.64px 8.87px 33.72px;
+
+    background: #1E282C;
+    border-radius: 2px 0px 0px 2px;
+    font-size: 14px;
+    cursor: pointer;
+    color: #F2F4F5;
+    position: relative;
+}
+
+.adress__search__text {
+    font-family: Montserrat;
+    width: 267.04px;
+    padding: 7.93px 79.28px 7.93px 16.68px;
+    font-size: 14px;
+    border-radius: 0px 2px 2px 0px;
+    border: 0;
+    border: 1px solid rgba(128, 128, 128, 0.2);
+    color: #1E282C;
+    font-weight: 500;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.adress__search__text:focus {
+    color: black;
+    text-align: left;
+    border: 1px solid rgba(128, 128, 128, 0.2);
+}
+
+.adress__search__button2 {
+    font-family: Montserrat;
+    background: #FC6621;
+    border-radius: 2px;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 7px 22px 8px 27px;
+    border: 0;
+    color: white;
+    cursor: pointer;
+}
+
+.adress__search__button2:hover {
+    background: #CA521A;
+}
+
+.adress__search__left .adress__search__button:hover {
+    background: #34454D;
+}
+
+.adress__map__img {
+    width: 100%;
+}
+
+.adress__map {
+    height: 357px;
+    overflow: hidden;
+}
+
+.adress__search__button:after {
+    content: url(../images/geo2.svg);
+    width: 10.84px;
+    height: 15.87px;
+    position: absolute;
+    left: 15px;
+}
+
+.adress__close {
+    position: absolute;
+    right: 0;
+    top: -47px;
+    cursor: pointer;
+}
+
+.adress__map__title,
+.adress__map__button1,
+.adress__map__button2,
+.adress__map__close {
+    display: none;
+}
+
+@media screen and (max-width: 732px) {
+    .adress__search {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .adress__search__button2 {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .adress__close {
+        display: none;
+    }
+
+    .adress {
+        margin-top: 0;
+    }
+
+    .adress__top-block {
+        display: none;
+    }
+
+    .adress__map {
+        height: 812px;
+
+    }
+    .adress__map__img {
+        height: 100%;
+        width: auto;
+    }
+
+    .adress__map__title {
+        display: block;
+        position: absolute;
+        top: 84px;
+        left: 0;
+        right: 0;
+        text-align: center;
+        font-weight: 600;
+        font-size: 24px;
+    }
+
+    .adress__map__button1 {
+        display: block;
+        position: absolute;
+        top: 126px;
+        width: 214px;
+        height: 28px;
+        left: 0;
+        right: 0;
+        padding: 0;
+        margin: auto;
+
+        background: #1E282C;
+        border-radius: 2px;
+        font-weight: 500;
+        font-size: 14px;
+        color: #F2F4F5;
+        border: 0;
+        font-family: Montserrat;
+        cursor: pointer;
+    }
+
+    .adress__map__button1:hover {
+        background: #34454D;
+    }
+
+    .adress__map__button2 {
+        display: block;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 32px;
+        width: 196px;
+        height: 48px;
+        padding: 0;
+        margin: auto;
+
+        background: #FC6621;
+        border-radius: 2px;
+        border: 0;
+        font-weight: 500;
+        font-size: 18px;
+        color: #F2F4F5;
+        font-family: Montserrat;
+        cursor: pointer;
+    }
+
+    .adress__map__button2:hover {
+        background: #CA521A;
+    }
+
+    .adress__map__close {
+        display: block;
+        position: absolute;
+        top: 40px;
+        left: 16px;
+        cursor: pointer;
+    }
+
+}
+
+@media screen and (max-width: 340px) {
+    .adress__map__button1 {
+        top: 150px;
+    }
+}

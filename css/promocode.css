@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&subset=cyrillic,cyrillic-ext,latin-ext,vietnamese');
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: grey;
+}
+
+.promocode__wrapper {
+    width: 100%;
+    max-width: 1440px;
+    position: relative;
+    /* top: 50%; */
+    /* transform: translate(0, -50%); */
+    /* right: 0; */
+    /* left: 0; */
+    margin: auto;
+    background: #F2F4F5;
+}
+
+.promocode__close {
+    position: absolute;
+    top: 20px;
+    right: 137px;
+    cursor: pointer;
+}
+
+.promocode__logo {
+    display: block;
+    width: 235px;
+    height: 55px;
+    padding-top: 169px;
+    margin: 0 auto;
+}
+
+.promocode__text {
+    font-weight: 600;
+    font-size: 24px;
+    width: 463px;
+    margin: 55px auto 0;
+    text-align: center;
+}
+
+.promocode__text2 {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 55px;
+    color: #808080;
+}
+
+.promocode__code {
+    position: relative;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font-family: 'Montserrat', sans-serif;
+    padding: 13px 82px 13px 14px;
+    border: 1px solid rgba(128, 128, 128, 0.2);
+    box-sizing: border-box;
+    border-radius: 2px;
+    background: inherit;
+    display: block;
+    margin: 0 auto;
+    font-size: 24px;
+    text-align: center;
+    width: 195px;
+    color: #1E282C;
+}
+
+.promocode__code:focus {
+    color: black;
+    text-align: left;
+    border: 1px solid rgba(128, 128, 128, 0.2);
+}
+
+.promocode__code__wrapper {
+    margin: 0 auto;
+    width: 195px;
+    position: relative;
+}
+
+.promocode__code__wrapper:after {
+    content: url(../images/share.svg);
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 17px;
+    top: 13px;
+    cursor: pointer;
+}
+
+.promocode__img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 443px;
+    margin-top: 114px;
+}
+
+@media screen and (max-width: 620px) {
+
+    .promocode__logo {
+        padding-top: 159px;
+    }
+
+    .promocode__text {
+        width: auto;
+        padding: 0 16px;
+    }
+
+    .promocode__close {
+        top: 32px;
+        right: 16px;
+    }
+
+    .promocode__img {
+        margin-top: 78px;
+        padding: 0 16px;
+        width: calc(100% - 32px);
+    }
+
+}
+
+
+@media screen and (max-width: 400px) {
+    .promocode__wrapper {
+        margin: 0 auto;
+    }
+}

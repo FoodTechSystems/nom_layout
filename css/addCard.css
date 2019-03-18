@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&subset=cyrillic,cyrillic-ext,latin-ext,vietnamese');
+body {
+    background: grey;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.addCard {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 415px;
+    padding: 37px 24px 6px 24px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+.addCard__title {
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    letter-spacing: 0.6px;
+}
+
+.addCard__form {
+    margin-top: 35px;
+}
+
+.addCard__form__nameOfCard {
+    margin-top: 23px;
+}
+
+.addCard__nameAndNumber {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+
+.addCard__nameAndNumber input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 1px solid rgba(128, 128, 128, 0.2);
+    text-align: center;
+    font-size: 14px;
+    text-align: center;
+
+    color: #808080;
+    padding: 14px 25px;
+    letter-spacing: 0.6px;
+}
+
+.addCard__MMandCVV {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-top: 24px;
+}
+
+.addCard__MMandCVV input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 1px solid rgba(128, 128, 128, 0.2);
+    width: calc(100%/2 - 8px);
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 14px;
+    text-align: center;
+    color: #808080;
+    padding: 13.5px 25px;
+}
+
+.addCard__ifno {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 325px;
+    font-size: 13px;
+    text-align: center;
+
+    color: #1E282C;
+    margin-top: 33px;
+}
+
+.addCard__form .addCard__button {
+    width: 100%;
+    height: 47px;
+    margin-top: 35px;
+    font-size: 14px;
+    letter-spacing: 0.6px;
+    font-weight: 600;
+    -webkit-appearance: none;
+    border-radius: 0;
+}
+
+.addCard__form input {
+    border-radius: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.addCard__button {
+    cursor: pointer;
+}
+
+.addCard__lineMobile {
+    display: none;
+}
+
+.addCard__burder-close {
+    display: none;
+    cursor: pointer;
+}
+
+.addCard__form .addCard__button:hover {
+    background: #CA521A;
+}
+
+.addCard__close {
+    position: absolute;
+    right: 0;
+    top: -47px;
+    cursor: pointer;
+}
+
+.addCard__MMandCVV input:focus,
+.addCard__nameAndNumber input:focus {
+    color: black;
+    text-align: left;
+    border: 1px solid rgba(128, 128, 128, 0.2);
+}
+
+#MMYY-error {
+    position: absolute;
+    margin-top: 40px;
+    padding: 10px 0;
+    font-size: 12px;
+}
+
+#CVV-error {
+    position: absolute;
+    margin-top: 40px;
+    text-align: right;
+    padding: 10px 0;
+    font-size: 12px;
+}
+
+.error {
+    width: 100%;
+    color: #FF0000;
+    padding: 14px 25px;
+    letter-spacing: 0.6px;
+    box-sizing: border-box;
+    /*border: 1px solid #FF0000;
+    border-radius: 2px;
+    margin-top: 23px;*/
+}
+
+input:invalid {
+    border: 1px solid #FF0000;
+}
+
+
+@media screen and (max-width: 620px) {
+    .addCard__close {
+        display: none;
+    }
+
+    .addCard {
+        position: absolute;
+        bottom: 0;
+        left: auto;
+        top: auto;
+        transform: none;
+        padding: 16px 16px 6px 16px;
+        border-radius: 10px 10px 0 0;
+        padding-bottom: 0;
+    }
+
+    .addCard__burder-close {
+        display: block;
+        position: absolute;
+        top: 16px;
+        right: 16px;
+    }
+
+    .addCard__title {
+        font-size: 16px;
+        text-align: left;
+        letter-spacing: 1.5px;
+        width: 75%;
+    }
+
+    .addCard__lineMobile {
+        display: block;
+        margin-top: 15px;
+        margin-left: -16px;
+        height: 1px;
+        width: 100vw;
+        background: rgba(128, 128, 128, 0.2);
+    }
+
+    .addCard__form {
+        margin-top: 27px;
+    }
+
+    .addCard__form .addCard__button {
+        width: calc(100% + 32px);
+        margin-left: -16px;
+        height: 64px;
+        margin-top: 52px;
+        margin-bottom: 0;
+    }
+
+    .addCard__ifno {
+        margin-top: 60px;
+    }
+}
