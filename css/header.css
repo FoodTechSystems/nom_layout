@@ -8,22 +8,30 @@ header{
     min-height: 46px;
     padding: 23px 0 17px 0;
     background: #F2F4F5;
-    box-shadow: 0px 4px 10px rgba(35, 47, 52, 0.05);
+    -webkit-box-shadow: 0px 4px 10px rgba(35, 47, 52, 0.05);
+            box-shadow: 0px 4px 10px rgba(35, 47, 52, 0.05);
 }
 
 header .header_container{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin: auto;
+    padding: 0 16px;
 }
 
 header .header_container .header_logo_container,
 header .header_container .header_categories_btn_countainer,
 header .header_container .header_user_info{
-    flex: 1;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
 }
 
 header .header_container .header_order_info{
-    flex: 2;
+    -webkit-box-flex: 2;
+        -ms-flex: 2;
+            flex: 2;
     display: -webkit-box;
 }
 
@@ -51,6 +59,8 @@ header .header_user_info_btn_sign_in{
 }
 
 header .header_user_info{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -94,6 +104,8 @@ header .header_categories_btn_countainer{
     color: #1E282C;
     margin-top: 7px;
     cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -118,7 +130,8 @@ header .header_order_info .header_order_info_location{
 header .header_order_info div{
     padding: 8px 16px 7px 15px;
     border: 1px solid rgba(128, 128, 128, 0.2);
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     border-radius: 2px;
 
     font-family: Montserrat;
@@ -197,7 +210,7 @@ header .header_container .mobile_open_menu_block{
     width: 100vw;
     height: 100vh;
     position: fixed;
-    z-index: 9998;
+    z-index: 9999;
     display: none;
 }
 .show.mobile_bar_menu_background{
@@ -205,7 +218,8 @@ header .header_container .mobile_open_menu_block{
 }
 
 .mobile_bar_menu.hidden{
-    animation: none;
+    -webkit-animation: none;
+            animation: none;
 }
 .mobile_bar_menu{
     z-index: 9999;
@@ -219,13 +233,17 @@ header .header_container .mobile_open_menu_block{
     padding: 16px;
     display: inline-block;
     position: fixed;
-    animation: move_mobile_bar_menu_close 0.5s infinite;
-    animation-iteration-count: 1;
+    -webkit-animation: move_mobile_bar_menu_close 0.5s infinite;
+            animation: move_mobile_bar_menu_close 0.5s infinite;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
 }
 
 .show.mobile_bar_menu{
-    animation: move_mobile_bar_menu_open 0.5s infinite;
-    animation-iteration-count: 1;
+    -webkit-animation: move_mobile_bar_menu_open 0.5s infinite;
+            animation: move_mobile_bar_menu_open 0.5s infinite;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
     display: inline-block;
     position: fixed;
     overflow-y: scroll;
@@ -239,12 +257,17 @@ header .header_container .mobile_open_menu_block{
     position: relative;
 }
 
+.mobile_bar_menu_wrapper {
+    height: 100%;
+}
+
 
 .mobile_bar_menu .mobile_navigation_links{
+    display: -ms-grid;
     display: grid;
     /*overflow: auto;*/
     margin: auto;
-    position: fixed;
+    position: absolute;
     bottom:0;
     width: 100%;
     bottom: 12px;
@@ -256,7 +279,8 @@ header .header_container .mobile_open_menu_block{
     font-weight: normal;
     line-height: normal;
     font-size: 10px;
-    text-decoration-line: underline;
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
 
     color: #808080;
     margin: 4.5px 0;
@@ -295,6 +319,7 @@ header .header_container .mobile_open_menu_block{
     top: 314px;
     right: 0;
     left: 0;
+    display: -ms-grid;
     display: grid;
     margin-bottom: 40px;
     clear: both;
@@ -308,6 +333,8 @@ header .header_container .mobile_open_menu_block{
     line-height: 34px;
     margin: calc(51px / 2) 0 calc(51px / 2) 16px;
     font-size: 18px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 
     color: #1E282C;
@@ -332,6 +359,21 @@ header .header_container .mobile_open_menu_block{
     content: url(../images/reach.svg);
 }
 
+@-webkit-keyframes move_mobile_bar_menu_open {
+  from {
+    top: 0;
+    right: -231px;
+    bottom: 0;
+    left: 100%;
+  }
+  to { 
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: calc(100% - 231px);
+  }  
+}
+
 @keyframes move_mobile_bar_menu_open {
   from {
     top: 0;
@@ -345,6 +387,23 @@ header .header_container .mobile_open_menu_block{
     bottom: 0;
     left: calc(100% - 231px);
   }  
+}
+
+@-webkit-keyframes move_mobile_bar_menu_close {
+
+  from { 
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: calc(100% - 231px);
+  }  
+  to {
+    top: 0;
+    right: -231px;
+    bottom: 0;
+    left: 100%;
+    display: none;
+  }
 }
 
 @keyframes move_mobile_bar_menu_close {
@@ -369,4 +428,3 @@ header .header_container .mobile_open_menu_block{
         position: inherit;
     }
 }
-

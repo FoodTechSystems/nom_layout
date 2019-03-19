@@ -1,0 +1,180 @@
+body {
+    max-height: 100vh;
+}
+
+.header_container {
+    max-width: 1154px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wrapper__restaurantsNotFound {
+    margin: 135px 150px 0 135px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1154px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wrapper__restaurantsNotFound__map {
+    width: 100%;
+    max-width: 570px;
+    max-height: 466px;
+    overflow: hidden;
+}
+
+.wrapper__restaurantsNotFound__map img {
+    width: 100%;
+}
+
+.wrapper__restaurantsNotFound__info {
+    width: 100%;
+    max-width: 468px;
+    text-align: center;
+    margin-top: 45px;
+}
+
+.wrapper__restaurantsNotFound__info__title {
+    font-weight: bold;
+    font-size: 24px;
+
+    color: #1E282C;
+}
+
+.wrapper__restaurantsNotFound__info__text {
+    font-size: 14px;
+    margin-top: 11px;
+    color: #1E282C;
+}
+
+.wrapper__restaurantsNotFound__info__button {
+    margin-top: 11px;
+    padding: 7px 15px;
+
+    border-radius: 2px;
+    border: 0;
+
+    font-weight: 500;
+    font-size: 14px;
+
+    background: #FC6621;
+    color: #F2F4F5;
+    cursor: pointer;
+}
+
+.wrapper__restaurantsNotFound__info__button:hover {
+    background: #CA521A;
+}
+
+
+.wrapper__restaurantsNotFound__bgopacity {
+    display: none;
+}
+
+.restaurantsNotFound__map__close {
+    display: none;
+}
+
+@media screen and (max-width: 1060px) {
+    .wrapper__restaurantsNotFound {
+        flex-direction: column;
+    }
+
+    .wrapper__restaurantsNotFound__info {
+        padding-bottom: 45px;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .wrapper__restaurantsNotFound__info {
+        margin-bottom: 40px;
+    }
+}
+
+
+
+@media screen and (max-width: 600px) {
+    header {
+        display: none;
+    }
+
+    .restaurantsNotFound__map__close {
+        display: block;
+        position: absolute;
+        top: 40px;
+        left: 16px;
+        cursor: pointer;
+        z-index: 2;
+    }
+
+    .footer {
+        display: none;
+    }
+
+    .wrapper__restaurantsNotFound__bgopacity {
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.4);
+    }
+
+    .wrapper__restaurantsNotFound__map {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .wrapper__restaurantsNotFound {
+        padding: 0;
+        margin: 0;
+    }
+
+    .wrapper__restaurantsNotFound__map {
+        max-width: 100vw;
+        max-height: 100vh;
+    }
+
+    .wrapper__restaurantsNotFound__map img {
+        width: auto;
+        height: 100%;
+    }
+
+    .wrapper__restaurantsNotFound__info {
+        width: 100%;
+        max-width: 254px;
+        margin-top: 0;
+        position: absolute;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 0;
+    }
+
+    .wrapper__restaurantsNotFound__info__title {
+        font-weight: bold;
+        font-size: 24px;
+
+        color: #F2F4F5;
+    }
+
+    .wrapper__restaurantsNotFound__info__text {
+        font-weight: normal;
+        font-size: 14px;
+
+        color: #F2F4F5;
+    }
+
+    .wrapper__restaurantsNotFound__info__button {
+        padding: 7px 14px;
+        width: 234px;
+        height: 48px;
+        box-sizing: border-box;
+        font-size: 18px;
+        position: absolute;
+        bottom: 32px;
+    }
+}

@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&subset=cyrillic,cyrillic-ext,latin-ext,vietnamese');
+
+body {
+    background-color: grey;
+    display: flex;
+}
+
+.dumbBasket {
+    position: relative;
+    margin: auto;
+    width: 848px;
+    padding: 34px 30px 50px 30px;
+    box-sizing: border-box;
+    background: #F2F4F5;
+    border-radius: 2px;
+}
+
+.dumbBasket__title {
+    font-weight: bold;
+    font-size: 36px;
+    letter-spacing: -0.09px;
+
+    color: #000000;
+}
+
+.dumbBasket__text {
+    margin-top: 34px;
+
+    font-weight: 500;
+    font-size: 18px;
+
+    color: #000000;
+}
+
+.dumbBasket__wrapperButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    margin-top: 44px;
+}
+
+.dumbBasket_button_right,
+.dumbBasket_button_back {
+    /*padding: 7px 132px;*/
+    width: 387px;
+    height: 36px;
+
+    font-weight: 600;
+    font-size: 18px;
+
+    color: #F2F4F5;
+    border: 0;
+    border-radius: 2px;
+    cursor: pointer;
+    font-family: Montserrat;
+}
+
+.dumbBasket_button_right {
+    background: #FC6621;
+}
+
+.dumbBasket_button_back {
+    background: #1E282C;
+}
+
+.dumbBasket_button_right:hover {
+    background: #CA521A;
+}
+
+.dumbBasket_button_back:hover {
+    background: #34454D;
+}
+
+.dumbBasket__close {
+    position: absolute;
+    right: 0;
+    top: -47px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 848px) {
+    .dumbBasket {
+        width: 100%;
+    }
+
+    .dumbBasket__title {
+        font-size: 24px;
+    }
+
+    .dumbBasket__text {
+        font-size: 16px;
+    }
+
+    .dumbBasket__wrapperButtons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dumbBasket_button_back {
+        margin-top: 16px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .dumbBasket_button_right,
+    .dumbBasket_button_back {
+        width: 100%;
+    }
+}

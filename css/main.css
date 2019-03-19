@@ -1,4 +1,4 @@
-﻿@font-face {
+@font-face {
     font-family: Montserrat;
     src: url(../fonts/Montserrat.ttf);
 }
@@ -31,61 +31,69 @@ body {
     background-size: cover;
     padding: 20px;
 }
-.main-wrapper .main-wrapper-container{
-    width: calc(100% - 2*10%) ;
+
+.main-wrapper .main-wrapper-container {
+    width: calc(100% - 2*10%);
     max-width: 1300px;
     margin: auto;
-    padding:calc(20vh - 86px / 2) 10%;
+    padding: calc(20vh - 86px / 2) 10%;
 }
 
-    .main-wrapper h2 {
-        font-size: 64px;
-        width: 60vw;
-        margin: 0 0 38px 0;
-        color: #F2F4F5;
-    }
+.main-wrapper h2 {
+    font-size: 64px;
+    width: 60vw;
+    margin: 0 0 38px 0;
+    color: #F2F4F5;
+}
 
-    .cookie {
-        height: 88px;
-        width: 100%;
-        bottom: 0px;
-        position: fixed;
-        background: #F2F4F5;
-    }
+.cookie {
+    height: 88px;
+    width: 100%;
+    bottom: 0px;
+    position: fixed;
+    background: #F2F4F5;
+}
 
-        .cookie .usage {
-            position: absolute;
-            top: 50%;
-            transform: translate(0%, -50%);
-            left: 50px;
-            font-size: 14px;
-            font-weight: 900;
-        }
+.cookie .usage {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
+    transform: translate(0%, -50%);
+    left: 50px;
+    font-size: 14px;
+    font-weight: 900;
+}
 
-        .cookie .description {
-            position: absolute;
-            top: 50%;
-            transform: translate(-50%, -50%);
-            left: 50%;
-            font-size: 12px;
-        }
+.cookie .description {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    left: 50%;
+    font-size: 12px;
+}
 
-        .cookie button {
-                position: absolute;
-                min-width: 200px;
-                top: 50%;
-                right: 20px;
-                transform: translate(0%, -50%);
-                background-color: #FC6621;
-                border: 1px solid rgba(128, 128, 128, 0.2);
-                border-radius: 2px;
-                color: #fff;
-                height: 52px;
-                font-size: 18px;
-                margin: 0px auto;
-        }
+.cookie button {
+    position: absolute;
+    min-width: 200px;
+    top: 50%;
+    right: 20px;
+    -webkit-transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
+    transform: translate(0%, -50%);
+    background-color: #FC6621;
+    border: 1px solid rgba(128, 128, 128, 0.2);
+    border-radius: 2px;
+    color: #fff;
+    height: 52px;
+    font-size: 18px;
+    margin: 0px auto;
+}
 
 .main-wrapper input[placeholder] {
+    -o-text-overflow: ellipsis;
     text-overflow: ellipsis;
     padding-left: 50px;
     padding-right: 50px;
@@ -110,35 +118,40 @@ body {
 }
 
 .main-wrapper form {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
-    .main-wrapper form button#mobile {
-        display: none;
-    }
+.main-wrapper form button#mobile {
+    display: none;
+}
 
-    .main-wrapper form button, form input[type = submit] {
-        background-color: #FC6621;
-        border: 1px solid rgba(128, 128, 128, 0.2);
-        border-radius: 0px 2px 2px 0;
-        color: #fff;
-        width: 240px;
-        height: 52px;
-        font-size: 18px;
-        margin: 10px 0;
-    }
+.main-wrapper form button,
+form input[type=submit] {
+    background-color: #FC6621;
+    border: 1px solid rgba(128, 128, 128, 0.2);
+    border-radius: 0px 2px 2px 0;
+    color: #fff;
+    width: 240px;
+    height: 52px;
+    font-size: 18px;
+    margin: 10px 0;
+}
 
-    .main-wrapper form input[type=text], form input[type=password], form input[type=email] {
-        color: #626262;
-        min-width: 260px;
-        height: 48px;
-        font-size: 18px;
-        background-color: #F2F4F5;
-        border: 1px solid rgba(128, 128, 128, 0.2);
-        border-radius: 2px 0 0 2px;
-        margin: 10px 0px;
-        width: 40vw;
-    }
+.main-wrapper form input[type=text],
+form input[type=password],
+form input[type=email] {
+    color: #626262;
+    min-width: 260px;
+    height: 48px;
+    font-size: 18px;
+    background-color: #F2F4F5;
+    border: 1px solid rgba(128, 128, 128, 0.2);
+    border-radius: 2px 0 0 2px;
+    margin: 10px 0px;
+    width: 40vw;
+}
 
 @media only screen and (max-width: 690px) {
     .cookie {
@@ -149,39 +162,45 @@ body {
         background: #F2F4F5;
     }
 
-        .cookie .usage {
-            position: relative;
-            font-size: 14px;
-            font-weight: 900;
-            top: unset;
-            transform: unset;
-            left: 0px;
-            margin: 10px;
-        }
+    .cookie .usage {
+        position: relative;
+        font-size: 14px;
+        font-weight: 900;
+        top: unset;
+        -webkit-transform: unset;
+        -ms-transform: unset;
+        transform: unset;
+        left: 0px;
+        margin: 10px;
+    }
 
-        .cookie .description {
-            position: relative;
-            font-size: 12px;
-            top: unset;
-            transform: unset;
-            left: 0px;
-            margin: 10px;
-        }
+    .cookie .description {
+        position: relative;
+        font-size: 12px;
+        top: unset;
+        -webkit-transform: unset;
+        -ms-transform: unset;
+        transform: unset;
+        left: 0px;
+        margin: 10px;
+    }
 
-        .cookie button {
-            position: relative;
-            font-size: 18px;
-            background-color: #FC6621;
-            border: 1px solid rgba(128, 128, 128, 0.2);
-            border-radius: 2px;
-            color: #fff;
-            width: 100%;
-            height: 47px;
-            top: unset;
-            transform: unset;
-            right: 0px;
-        }
-    .main-wrapper .main-wrapper-container{
+    .cookie button {
+        position: relative;
+        font-size: 18px;
+        background-color: #FC6621;
+        border: 1px solid rgba(128, 128, 128, 0.2);
+        border-radius: 2px;
+        color: #fff;
+        width: 100%;
+        height: 47px;
+        top: unset;
+        -webkit-transform: unset;
+        -ms-transform: unset;
+        transform: unset;
+        right: 0px;
+    }
+    .main-wrapper .main-wrapper-container {
         padding: calc(35vh - 86px / 2) 0;
     }
 
@@ -195,45 +214,46 @@ body {
     }
 
     .main-wrapper form {
-        left:0px;
-        width:100%;
+        left: 0px;
+        width: 100%;
     }
 
-        .main-wrapper form input[type=text] {
-            display: none;
-        }
+    .main-wrapper form input[type=text] {
+        display: none;
+    }
 
-        .main-wrapper form input[type=submit] {
-            display: none;
-        }
+    .main-wrapper form input[type=submit] {
+        display: none;
+    }
 
-            .main-wrapper form button#mobile {
-                background-color: #FC6621;
-                border: 1px solid rgba(128, 128, 128, 0.2);
-                border-radius: 2px;
-                color: #fff;
-                width: 60%;
-                height: 52px;
-                font-size: 18px;
-                margin: 10px auto;
-                display: block;
-                
-                background-repeat: no-repeat;
-                background-position: 20px 15px;
-                padding-left: 20px;
-                padding-right: 20px;
-                font-size: 14px;
-            }
+    .main-wrapper form button#mobile {
+        background-color: #FC6621;
+        border: 1px solid rgba(128, 128, 128, 0.2);
+        border-radius: 2px;
+        color: #fff;
+        width: 60%;
+        height: 52px;
+        font-size: 18px;
+        margin: 10px auto;
+        display: block;
 
-            .main-wrapper form button#mobile:before{
-                fill: #fff;
-                content: url(../images/geo.svg);
-                width: 13px;
-                height: 16px;
-                color: #fff;
+        background-repeat: no-repeat;
+        background-position: 20px 15px;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 14px;
+    }
 
-            }
+    .main-wrapper form button#mobile:before {
+        fill: #fff;
+        content: url(../images/geo.svg);
+        width: 13px;
+        height: 16px;
+        color: #fff;
+
+    }
 }
+
 @media only screen and (min-width: 690px) and (max-width: 900px) {
     .main-wrapper h2 {
         font-size: 36px;
@@ -246,14 +266,15 @@ body {
     }
 
     .cookie .description {
-        width:40%
+        width: 40%
     }
 
     .cookie button {
         right: 10px;
     }
-    
+
 }
+
 @media only screen and (min-width: 900px) and (max-width: 1140px) {
     .main-wrapper h2 {
         font-size: 46px;
@@ -273,11 +294,12 @@ body {
         right: 20px;
     }
 }
-@media only screen and (min-width: 1400px){
-    .main-wrapper .main-wrapper-container{
-        width: calc(100% - 2*10%) ;
+
+@media only screen and (min-width: 1400px) {
+    .main-wrapper .main-wrapper-container {
+        width: calc(100% - 2*10%);
         max-width: 1300px;
         margin: auto;
-        padding:calc(20vh - 86px / 2) 0%;
+        padding: calc(20vh - 86px / 2) 0%;
     }
 }
