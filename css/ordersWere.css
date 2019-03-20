@@ -1,0 +1,167 @@
+.ordersWere__wrap {
+    max-width: 1154px;
+    margin: auto;
+    margin-top: 120px;
+    padding-bottom: 40px;
+}
+
+.ordersWere__line-mobile {
+    display: none;
+}
+
+.ordersWere__title {
+    font-weight: bold;
+    font-size: 36px;
+
+    color: #1E282C;
+}
+
+.ordersWere__subtitle {
+    display: flex;
+    margin-top: 46px;
+    font-weight: 500;
+    font-size: 18px;
+
+    color: #1E282C;
+}
+
+.ordersWere__subtitle div {
+    cursor: pointer;
+}
+
+.ordersWere__subtitle__after {
+    margin-left: 13px;
+    color: #808080;
+}
+
+.ordersWere__block {
+    width: 1170px;
+    margin-top: 11px;
+
+    border: 1px solid rgba(128, 128, 128, 0.2);
+    box-sizing: border-box;
+    border-radius: 2px;
+    padding: 11px 16px 16px 16px;
+}
+
+.ordersWere__block>div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ordersWere__block__restaurant-price {
+    font-weight: 600;
+    font-size: 24px;
+
+    color: #1E282C;
+}
+
+.ordersWere__block__time {
+    margin-top: 12px;
+    font-size: 18px;
+
+    color: #1E282C;
+}
+
+.ordersWere__block__info {
+    display: flex;
+}
+
+.ordersWere__block__info__comment {
+    margin-left: 5px;
+}
+
+.ordersWere__block__info-count {
+    margin-top: 20px;
+    font-size: 18px;
+
+    color: #808080;
+}
+
+.ordersWere__block__info-count_modify {
+    margin-top: 6px;
+}
+
+.ordersWere__block__info-count2 {
+    margin-top: 12px;
+}
+
+.ordersWere__block__info__comment {
+    width: 160px;
+}
+
+.ordersWere__back-mobile {
+    display: none;
+}
+
+@media screen and (max-width: 1260px) {
+    .ordersWere__wrap {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 0 16px 40px 16px;
+    }
+
+    .ordersWere__block {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    header {
+        display: none;
+    }
+
+    .ordersWere__back-mobile {
+        display: block;
+        position: absolute;
+        top: 53px;
+        left: 17px;
+        cursor: pointer;
+    }
+
+    .ordersWere__line-mobile {
+        display: block;
+        height: 1px;
+        width: 100vw;
+        margin-left: -16px;
+        margin-top: 20px;
+        background: #C4C4C4;
+    }
+
+    .ordersWere__wrap {
+        margin-top: 52px;
+    }
+
+    .ordersWere__title {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .ordersWere__subtitle {
+        display: none;
+    }
+
+    .ordersWere__block {
+        border-left: 0;
+        border-right: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .ordersWere__block_first {
+        border-top: 0;
+    }
+
+    .ordersWere__block__restaurant-price {
+        font-size: 20px;
+    }
+
+    .ordersWere__block__time {
+        font-size: 14px;
+        font-family: Montserrat;
+    }
+
+    .ordersWere__block__info-count {
+        font-size: 14px;
+    }
+}
